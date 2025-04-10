@@ -33,7 +33,8 @@ export default defineConfig({
     },
     returnToTopLabel: '返回顶部',
     footer: {
-      copyright: 'MIT Licensed | Copyright © 2024-present penguin0731'
+      copyright: '<a href="https://beian.miit.gov.cn/">粤ICP备2025398934号</a>',
+      message: 'MIT Licensed | Copyright © 2024-present penguin0731'
     },
     search: {
       provider: 'local'
