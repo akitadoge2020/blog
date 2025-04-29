@@ -34,7 +34,7 @@ export default defineConfig({
     returnToTopLabel: '返回顶部',
     footer: {
       copyright: '<a href="https://beian.miit.gov.cn/">粤ICP备2025398934号</a>',
-      message: 'MIT Licensed | Copyright © 2024-present penguin0731'
+      message: 'MIT Licensed | Copyright © 2025-present akitadoge2020'
     },
     search: {
       provider: 'local'
