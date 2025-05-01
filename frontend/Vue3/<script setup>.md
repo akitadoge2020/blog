@@ -70,7 +70,7 @@ defineProps 和 defineEmits API 被称为**编译器宏**，它们不需要导�
 
 ### 使用 slots 和 attrs
 
-slots 和 attrs 一般常用于模板中，通过 $slots 和 $attrs 访问即可。如果需要在`<script setup>`中使用的话，可以通过 useSlots 和 use Attrs 两个辅助函数。
+slots 和 attrs 一般常用于模板中，通过 $slots 和 \$attrs 访问即可。如果需要在`<script setup>`中使用的话，可以通过 useSlots 和 use Attrs 两个辅助函数。
 
 ```vue
 <script setup>

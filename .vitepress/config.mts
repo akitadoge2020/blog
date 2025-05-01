@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "🧸陈欣健的博客",
   description: "基于vitepress搭建的个人博客",
-  base: "/",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     // 引入百度统计代码
@@ -41,12 +40,12 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Frontend', link: '/frontend/introduction' },
-      { text: 'Backend', link: '/backend/introduction' }
+      { text: 'Frontend', link: '/frontend/introduction/' },
+      { text: 'Backend', link: '/backend/introduction/' }
     ],
     sidebar: {
       "/frontend/": [
-        { text: "introduction", link: "/frontend/introduction" },
+        { text: "introduction", link: "/frontend/introduction/" },
         {
           text: "HTML",
           collapsed: true,
@@ -133,7 +132,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: "Vue3 和 Vue2 的区别", link: "/frontend/Vue3/Vue3 和 Vue2 的区别" },
-            { text: "<script setup>", link: "/frontend/Vue3/<script setup>" },
+            { text: "script setup", link: "/frontend/Vue3/<script setup>" },
             { text: "Pinia", link: "/frontend/Vue3/Pinia" },
             { text: "Vite vs webpack", link: "/frontend/Vue3/Vite vs webpack" },
           ],
@@ -378,7 +377,7 @@ export default defineConfig({
         },
       ],
       "/backend/": [
-        { text: "introduction", link: "/backend/introduction" },
+        { text: "introduction", link: "/backend/introduction/" },
         {
           text: "Java",
           collapsed: true,
