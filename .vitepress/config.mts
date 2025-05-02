@@ -43,6 +43,9 @@ export default defineConfig({
       { text: 'Frontend', link: '/frontend/introduction/' },
       { text: 'Backend', link: '/backend/introduction/' }
     ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/akitadoge2020' }
+    ],
     sidebar: {
       "/frontend/": [
         { text: "introduction", link: "/frontend/introduction/" },
@@ -402,6 +405,13 @@ export default defineConfig({
           ],
         },
       ],
+    }
+  },
+  markdown: {
+    lineNumbers: true,
+    image: {
+      // 默认禁用；设置为 true 可为所有图片启用懒加载。
+      lazyLoading: true
     }
   },
   lastUpdated: true
