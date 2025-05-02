@@ -132,6 +132,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: "Vue3 和 Vue2 的区别", link: "/frontend/Vue3/Vue3 和 Vue2 的区别" },
+            // text字段不支持<>,会导致刷新时页面空白
             { text: "script setup", link: "/frontend/Vue3/<script setup>" },
             { text: "Pinia", link: "/frontend/Vue3/Pinia" },
             { text: "Vite vs webpack", link: "/frontend/Vue3/Vite vs webpack" },
