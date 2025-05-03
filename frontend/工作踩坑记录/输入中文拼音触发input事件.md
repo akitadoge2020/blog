@@ -26,7 +26,7 @@ input.addEventListener('input', function () {
 
 
 
-## 解决过程和方案
+## 解决过程与方案
 
 JavaScript 中有两个事件可以解决这样的问题，分别为 compositionstart 和 compositionend，表示文本合成开始事件和文本合成结束事件。
 

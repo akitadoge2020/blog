@@ -377,6 +377,26 @@ export default defineConfig({
               text: "输入中文拼音触发input事件",
               link: "/frontend/工作踩坑记录/输入中文拼音触发input事件",
             },
+            {
+              text: "Vue3+Vite兼容旧版浏览器",
+              link: "/frontend/工作踩坑记录/Vue3+Vite兼容旧版浏览器",
+            },
+            {
+              text: "electron自动登录问题",
+              link: "/frontend/工作踩坑记录/electron自动登录问题"
+            },
+            {
+              text: "多个子元素在父容器中动态排列问题",
+              link: "/frontend/工作踩坑记录/多个子元素在父容器中动态排列问题"
+            },
+            {
+              text: "ios微信h5唤起app问题",
+              link: "/frontend/工作踩坑记录/ios微信h5唤起app问题"
+            },
+            {
+              text: "antDesignVue封装方法型组件问题",
+              link: "/frontend/工作踩坑记录/antDesignVue封装方法型组件问题"
+            },
           ],
         },
       ],

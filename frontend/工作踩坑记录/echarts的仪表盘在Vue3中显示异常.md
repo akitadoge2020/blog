@@ -69,6 +69,7 @@ onMounted(() => {
 
 ## 参考链接
 
+- [[Bug\] gague display abnormally when the value is 0 in Vue3 · Issue #18810 · apache/echarts (github.com)](https://github.com/apache/echarts/issues/18810)
 - [FAQ - Apache ECharts](https://echarts.apache.org/zh/faq.html#others)
 
 
