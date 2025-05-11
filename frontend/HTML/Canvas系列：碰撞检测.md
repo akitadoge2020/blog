@@ -8,7 +8,7 @@
 
 ![image-20230808151546294](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202308081515426.png)
 
-两圆心分别为(x1, y1)，(x2, y2)，求两圆心距离公式为：   $ distance = \sqrt {(x1 - x2)^2 + (y1 - y2)^2} $
+两圆心分别为(x1, y1)，(x2, y2)，求两圆心距离公式为：$distance = \sqrt {(x1 - x2)^2 + (y1 - y2)^2}$
 
 检测方法如下：
 
