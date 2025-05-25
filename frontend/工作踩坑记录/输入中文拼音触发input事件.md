@@ -6,7 +6,7 @@
 
 在常规的监听输入框的 input 事件中，当我们输入中文拼音，并且还未键入中文的情况下，依然会触发 input 事件，然而触发的这些事件是无意义的。
 
-![input-event](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202309231013234.gif)
+![input-event](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/input-event.gif)
 
 代码如下：
 
@@ -51,4 +51,5 @@ input.addEventListener('compositionend', function () {
 });
 ```
 
-![input-event2](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202309231021127.gif)
+![input-event2](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/input-event2.gif)
+

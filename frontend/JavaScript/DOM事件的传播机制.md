@@ -86,7 +86,11 @@ DOM 事件流包括三个阶段：事件捕获阶段、处于目标阶段、事�
 
 仍以上面的 HTML 页面作为例子，那么点击 div 元素就会按照下图顺序触发 click 事件：
 
-![image-20220828160815273](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com//img/202208281608380.png)
+
+
+![202208281608380](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202208281608380.png)
+
+
 
 在 DOM 事件流中，目标元素（`<div>`元素）在捕获阶段不会接收事件。这意味着在捕获阶段，事件从 document 到 `<html>` 再到 `<body>`后就停止了。下一个阶段就是「处于目标」阶段，于是事件在目标元素上发生，并在事件处理中被看成冒泡阶段的一部分。然后冒泡阶段发生，事件又传播回 document。
 

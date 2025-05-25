@@ -197,9 +197,7 @@ auto-fill 关键字表示自动填充，让一行（或一列）尽可能的容�
 
 效果如下：
 
-![grid布局-auto-fill](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071436436.gif)
-
-
+![](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/grid%E5%B8%83%E5%B1%80-auto-fill.gif)
 
 ### fr 关键字
 
@@ -228,7 +226,7 @@ fr 关键字是 grid 布局中的一种长度单位，表示网格容器中剩�
 
 效果如下：
 
-![grid布局-fr](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071437426.gif)
+![grid布局-fr](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/grid%E5%B8%83%E5%B1%80-fr.gif)
 
 
 
