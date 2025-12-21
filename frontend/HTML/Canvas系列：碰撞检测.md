@@ -6,7 +6,7 @@
 
 圆与圆之间的碰撞很简单，只需要将两圆的圆心距离和两圆的半径之和做比较即可。若两圆的圆心距离大于两圆的半径之和，那么说明两圆没有发生碰撞；如果相等，则说明两圆相切，即刚好碰撞在一起。如果小于，则说明两圆相交。
 
-![image-20230808151546294](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202308081515426.png)
+<img src="https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/image-20250607151247675.png" alt="image-20250607151247675" style="zoom:50%;" />
 
 两圆心分别为(x1, y1)，(x2, y2)，求两圆心距离公式为：$distance = \sqrt {(x1 - x2)^2 + (y1 - y2)^2}$
 
@@ -31,7 +31,7 @@ function isCollisionCircleAndCircle(circle1, circle2) {
 
 矩形与矩形的碰撞也很简单，一般情况下，矩形的原点是左上角的顶点。那么在这个基础下，矩形与矩形之间没有发生碰撞的情况有四种，即矩形在另一个矩形的上下左右面，其余情况都是相交或相切。
 
-![image-20230808151604033](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202308081516086.png)
+![image-20250607151738438](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/image-20250607151738438.png)
 
 检测方法如下：
 
@@ -57,11 +57,11 @@ function isCollisionRectAndRect(rect1, rect2) {
 
 首先像矩形与矩形一样，圆在矩形的上下左右面这四种情况都不属于碰撞。
 
-![image-20230808151725384](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202308081517472.png)
+![image-20250607152030849](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/image-20250607152030849.png)
 
 除了上述四种情况，还有四种情况也不属于碰撞，即圆在矩形的左上、右上、左下、右下四个角。这四种情况，需要拿到矩形四个顶点的坐标，分别计算与圆心的距离是否小于圆的半径，若小于则是发生碰撞。
 
-![image-20230808151853484](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202308081518568.png)
+![image-20250607152122481](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/image-20250607152122481.png)
 
 检测方法如下：
 
