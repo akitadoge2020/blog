@@ -12,7 +12,7 @@
 
 每个组件实例都对应一个Watcher实例，它会在组件渲染虚拟Dom树的过程中把“接触”过的数据记录为依赖项（“接触”其实就是触发了数据的getter）。之后当数据的setter触发时，会通知Watcher，从而使它关联的组件重新渲染。
 
-![image-20220409221917140](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/image-20220409221917140.png)
+![reactive](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032030874.png)
 
 # 实现核心
 

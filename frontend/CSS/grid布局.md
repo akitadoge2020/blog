@@ -99,7 +99,7 @@ grid-template-columns 属性设置的是网格容器的列宽，grid-template-ro
 
 效果如下：
 
-![image-20230407111449193](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071114302.png)
+![image-20260103193419879](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601031934933.png)
 
 
 
@@ -134,7 +134,7 @@ gap 属性是这两个属性的简写，`gap: <row-gap> <column-gap>`
 
 效果如下：
 
-![image-20230407111752412](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071117461.png)
+![image-20260103193438153](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601031934215.png)
 
 
 
@@ -234,9 +234,9 @@ fr 关键字是 grid 布局中的一种长度单位，表示网格容器中剩�
 
 grid-template-area 属性用于定义区域，一个区域由一个或多个网格组成。
 
-这个属性一般与项目属性中的 grid-area 属性配合使用。
+这个属性一般与项目属性中的 **grid-area** 属性配合使用。
 
-```css {17-22}
+```css {13-18,31,36,41,46,51,56,61,66,71}
 .wrapper {
   width: 70%;
   height: 500px;
@@ -246,19 +246,15 @@ grid-template-area 属性用于定义区域，一个区域由一个或多个网�
 
   /* 设置元素为网格容器 */
   display: grid;
-  /* 设置第一列的列宽为200px，设置第二第三列均为剩余空间的40% */
-  grid-template-columns: repeat(5, 1fr);
-  /* 设置行高，行数为1，超出的元素将平分剩余容器的高度 */
-  grid-template-rows: repeat(5, 1fr);
   /* 行列间距10px */
   gap: 10px;
   /* 定义区域 */
   grid-template-areas: 
-      "one   two   two   three four"
-      "five  two   two   three four"
-      "five  six   seven three four"
-      ".     six   seven nine  four"
-      "eight eight seven nine  four";
+    "one   two   two   three four"
+    "five  two   two   three four"
+    "five  six   seven three four"
+    ".     six   seven nine  four"
+    "eight eight seven nine  four";
 }
 
 .item {
@@ -319,7 +315,7 @@ grid-template-area 属性用于定义区域，一个区域由一个或多个网�
 
 效果如下：
 
-![image-20230407145152810](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071451869.png)
+![image-20260103194937700](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601031949763.png)
 
 ### grid-auto-columns 属性和 grid-auto-rows 属性
 
@@ -351,7 +347,7 @@ gird-auto-rows 属性和 grid-auto-columns 属性就是用于定义隐式网格�
 
 效果如下：
 
-![image-20230407145554618](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071455692.png)
+![image-20260103195700728](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601031957783.png)
 
 一般情况下，grid-auto-columns 属性相对 grid-auto-rows 属性来说使用的较少，但当我们指定一个项目占据新的一列时，或许会用的上。
 
@@ -427,7 +423,7 @@ gird-auto-rows 属性和 grid-auto-columns 属性就是用于定义隐式网格�
 
 效果如下：
 
-![image-20230407145440654](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071455276.png)
+![image-20260103200122518](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032001586.png)
 
 ### grid-auto-flow 属性
 
@@ -502,7 +498,7 @@ grid-auto-flow 属性控制着网格的自动布局算法，默认值是`row`，
 
 效果如下：
 
-![image-20230407160751441](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071607480.png)
+![image-20260103200259206](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032002265.png)
 
 我们可以看到第二行的最后有一块空白，这是因为第六个项目的长度大于空白的长度，因此第六个项目被挤到了下一行。在实际的场景中，我们也许需要尽可能的填满网格，这个时候我们可以将值设成`row dense`，表示网格布局按先行后列的布局算法自动排列，并且当后面有较小的元素时，会试图去填满前面的空白，当然这也会打乱项目原来的顺序。
 
@@ -529,7 +525,7 @@ grid-auto-flow 属性控制着网格的自动布局算法，默认值是`row`，
 
 效果如下：
 
-![image-20230407164955637](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071649698.png)
+![image-20260103200349956](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032003007.png)
 
 同样的，也可以将值设成`column`，即**先列后行**。
 
@@ -556,7 +552,7 @@ grid-auto-flow 属性控制着网格的自动布局算法，默认值是`row`，
 
 效果如下：
 
-![image-20230407170418075](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304071704143.png)
+![image-20260103200541952](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032005004.png)
 
 ### justify-items 属性和 align-items 属性
 
@@ -595,19 +591,19 @@ align-items: start | center | end | stretch;
 
 - start：对齐网格起始位置边缘
 
-![image-20230410145631872](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101456016.png)
+![image-20230410145631872](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032007937.png)
 
 - center：网格内容居中
 
-![image-20230410145911087](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101459143.png)
+![image-20260103200747474](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032007539.png)
 
 - end：对齐网格结束位置边缘
 
-![image-20230410145946943](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101459987.png)
+![image-20260103200803035](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032008090.png)
 
 - stretch：拉伸，占满网格的整个宽度（默认值）
 
-![image-20230410150020408](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101500452.png)
+![image-20260103200819089](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032008141.png)
 
 
 
@@ -622,7 +618,7 @@ justify-content: start | center | end | stretch | space-around | space-between |
 align-content: start | center | end | stretch | space-around | space-between | space-evenly;
 ```
 
-以 justify-items 属性为例：
+以 justify-content 属性为例：
 
 ```css {14}
 .wrapper {
@@ -646,31 +642,27 @@ align-content: start | center | end | stretch | space-around | space-between | s
 
 - start：内容区域对齐容器的起始位置边缘
 
-![image-20230410151053681](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101510725.png)
+![image-20260103201012185](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032010250.png)
 
 - center：内容区域在容器的居中位置
 
-![image-20230410151124283](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101511329.png)
+![image-20260103201031661](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032010716.png)
 
 - end：内容区域对齐容器的结束位置边缘
 
-![image-20230410151148002](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101511043.png)
-
-- stretch：项目没有指定大小时，拉伸占满整个网格
-
-![](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101512259.png)
+![image-20230410151148002](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032010532.png)
 
 - space-around：内容区域与容器两边的间隔相等，并且这个间隔是项目之间原间隔的二分之一
 
-![image-20230410151522254](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101515327.png)
+![image-20260103202148477](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032021538.png)
 
 - space-between：内容区域与容器两边没有间隔，项目之间原间隔相等
 
-![image-20230410151934234](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101519284.png)
+![image-20260103202203891](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032022947.png)
 
 - space-evenly：内容区域与容器两边的间隔，和项目之间的原间隔相等
 
-![image-20230410152203473](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304101522519.png)
+![image-20260103202245621](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032022671.png)
 
 ::: warning 注意
 
@@ -725,7 +717,7 @@ grid-row 属性同理。
 
 效果如下：
 
-![image-20230411165601600](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202304111656636.png)
+![image-20260103202345408](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032023468.png)
 
 
 

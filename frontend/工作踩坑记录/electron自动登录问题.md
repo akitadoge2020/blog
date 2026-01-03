@@ -14,7 +14,7 @@
 
 问题流程复现：
 
-![image-20250503145720187](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202505031457214.png)
+![whiteboard_exported_image](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601032025542.png)
 
 
 
