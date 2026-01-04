@@ -6,11 +6,11 @@
 
 在 Vue3 中使用 echarts 的仪表盘（gague），当仪表盘的数据为0时，仪表盘的轴线（axisLine）显示异常。
 
-![image-20230713111446259](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202307131114439.png)
+<img src="https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601041627849.png" alt="image-20260104162746795" style="zoom:50%;" />
 
 只有当鼠标在仪表盘上悬浮时轴线才会显示。
 
-![image-20230713111656237](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202307131116288.png)
+<img src="https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601041628027.png" alt="image-20260104162806991" style="zoom:50%;" />
 
 demo地址：[CodeSandbox](https://codesandbox.io/p/sandbox/friendly-varahamihira-pwr3ff?file=%2Fsrc%2Fviews%2FHomeView.vue%3A1%2C1-40%2C1)
 

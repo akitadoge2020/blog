@@ -10,7 +10,7 @@
 
 通过 MDN 文档发现 String.prototype.replaceAll 方法能够兼容 webview 内核最低版本是85，而我们的测试机版本是70。
 
-![image-20250503133331937](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/202505031333108.png)
+![image-20260104163231466](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601041632497.png)
 
 因此需要对该方法进行 Pollyfill，配置如下：
 
