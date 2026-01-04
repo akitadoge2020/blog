@@ -4,7 +4,7 @@ Node中有一个重要的库libuv，它封装了不同操作系统的一些底�
 
 libuv库中的事件循环分为6个阶段，它们会按照顺序反复运行。每当进入某一个阶段的时候，都会去执行该阶段队列中的回调函数，直到队列中的回调函数被清空或已达到执行的最大回调数，满足该条件时，会自动进入下一个阶段。
 
-![image-20220621100906629](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com/img/image-20220621100906629.png)
+![Node的事件循环](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601041601417.jpg)
 
 从上图中，大致看出Node中的事件循环的顺序：
 
@@ -191,5 +191,4 @@ test();
 ## 参考链接
 
 - [浏览器与Node的事件循环(Event Loop)有何区别? ](https://juejin.cn/post/6844903761949753352#heading-13)
-
 

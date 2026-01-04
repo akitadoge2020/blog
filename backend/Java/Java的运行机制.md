@@ -43,9 +43,7 @@ public class Test {
 
 - 接着声明另一块变量空间 `int[] array`，并且创建数组对象，数组对象长度为3，成员分别为`1，2，3`，然后将数组对象第一个成员的地址存储到变量空间`int[] array`中
 
-![image-20230310110824916](https://penguinbucket.obs.cn-southwest-2.myhuaweicloud.com//img/202303101108199.png)
-
-
+![image-20260104153759283](https://akitadoge-blog.oss-cn-guangzhou.aliyuncs.com/202601041537311.png)
 
 
 
